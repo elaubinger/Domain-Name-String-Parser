@@ -5,9 +5,10 @@ Syntax
 ------
 dotnet_path DomainStringParser.dll name [-offline]
 
-Sample: '"C:\Program Files\dotnet\dotnet.exe" DomainStringParser.dll clever.me'
+Sample: "C:\Program Files\dotnet\dotnet.exe" DomainStringParser.dll clever.me
 
 Arguments
 ---------
 name: Name of file to check against, required argument
+
 -offline: Optional flag which forces deferment to the offline copy of domains
