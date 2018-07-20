@@ -10,4 +10,5 @@ Sample: "C:\Program Files\dotnet\dotnet.exe" DomainStringParser.dll cleverme
 Arguments
 ---------
 name: Name of file to check against, required argument
+
 -offline: Optional flag which forces deferment to the offline copy of top level domains
