@@ -133,12 +133,16 @@ namespace DomainStringParser
                 #endregion
 
                 #region Format and Print List
-                foreach(var match in matchesByStrength)
-                    Console.WriteLine($"{name.Substring(0, name.Length - match.Item2.Length)}.{match.Item1}");
+                string abbreviatedName;
+                foreach (var match in matchesByStrength)
+                {
+                    abbreviatedName = name.Substring(0, name.Length - match.Item2.Length);
+                    Console.WriteLine($"{abbreviatedName}.{match.Item1}");
+                }
                 if(matchesByStrength.Count == 0) Console.WriteLine("No matching domains found");
                 #endregion
 
-                Console.WriteLine("Press any key to exit");
+                Console.WriteLine("Press return to exit");
 
                 Console.Read();
             }
@@ -148,6 +152,6 @@ namespace DomainStringParser
             }
         }
 
-        private static void PrintException(string message, Exception ex) => Console.WriteLine($"{message} ({ex.GetType()}): {Environment.NewLine}{ex.StackTrace}");
+        private static void PrintException(string message, Exception ex) => Console.WriteLine($"{message} ({ex.GetType()}): {ex.Message}{Environment.NewLine}{ex.StackTrace}");
     }
 }

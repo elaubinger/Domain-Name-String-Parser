@@ -5,8 +5,12 @@
       "commandLineArgs": "fakenameio"
     },
     "DomainStringParser Offline": {
-      "commandName": "Executable",
+      "commandName": "Project",
       "commandLineArgs": "fakenameio -offline"
+    },
+    "cleverme": {
+      "commandName": "Project",
+      "commandLineArgs": "cleverme"
     }
   }
 }
