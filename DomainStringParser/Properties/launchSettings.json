@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "DomainStringParser": {
+      "commandName": "Project",
+      "commandLineArgs": "fakenameio"
+    },
+    "DomainStringParser Offline": {
+      "commandName": "Executable",
+      "commandLineArgs": "fakenameio -offline"
+    }
+  }
+}
